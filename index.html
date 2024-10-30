@@ -20,22 +20,23 @@
 <body>
   <div>
     <div class="wrapper">
-      <h1 style="font-family: &#39;Lato&#39;, sans-serif;">Not all images are worth a thousand words!</h1>
-      <h4 style="font-family: &#39;Lato&#39;, sans-serif; ">Fall 2024 CSCI 5541 NLP: Class Project - University of Minnesota</h4>
-      <h4 style="font-family: &#39;Lato&#39;, sans-serif; ">Team Name</h4>
+      <h1 style="font-family: 'Lato', sans-serif;">Not all images are worth a thousand words!</h1>
+      <h4 style="font-family: 'Lato', sans-serif;">Fall 2024 CSCI 5541 NLP: Class Project - University of Minnesota</h4>
+      <h4 style="font-family: 'Lato', sans-serif;">Visual Linguists</h4>
+
 
       <div class="authors-wrapper">
         
         <div class="author-container">
           <div class="author-image">
                         
-              <img src="">
+            <img src="./files/image.png" alt="Profile Image">
             
             
           </div>
           <p>
                         
-              Hardik Gupta
+            Koustav Banerjee
             
           </p>
         </div>
@@ -43,12 +44,12 @@
         <div class="author-container">
           <div class="author-image">
             
-            <img src="">
+            <img src="./files/profile.png">
             
           </div>
           <p>
             
-            Koustav Banerjee
+            Hardik Gupta
             
           </p>
         </div>
@@ -118,13 +119,11 @@
     
     <h2 id="abstract">Abstract</h2>
 
-<p>## One or two sentences on the motivation behind the problem you are solving. One or two sentences describing the approach you took. One or two sentences on the main result you obtained.
+    <!-- ## One or two sentences on the motivation behind the problem you are solving. One or two sentences describing the approach you took. One or two sentences on the main result you obtained. -->
+<p>
   Complex scenes can be more challenging to
-memorize than easier scenes. Established the-
-ories of working memory in psychology state
-that humans have a finite visual memory capac-
-ity (often limited to 4 items). However, coun-
-terintuitively we seem to remember a vast bit
+memorize than easier scenes. Established theories of working memory in psychology state
+that humans have a finite visual memory capacity (often limited to 4 items). However, counterintuitively we seem to remember a vast bit
 of visual information about the natural world.
 This may be the case because natural objects
 are remembered semantically (where we can
@@ -138,25 +137,23 @@ as found by psychology literature. In this work
 we intend to utilize latest generative models
 like GPT to create captions for abstract images
 and see if these captions also become more
-complex as the image stimulus becomes com-
-plex. This shall provide us with some evidence
-about how the relatively poorer memory perfor-
-mance for abstract images may be due to the
+complex as the image stimulus becomes complex. This shall provide us with some evidence
+about how the relatively poorer memory performance for abstract images may be due to the
 difficulty in memorizing them semantically.
 </p>
 
 <hr>
 
-<h2 id="teaser">Teaser Figure</h2>
+<h2 id="teaser">Schematic Figure</h2>
 
-<p>A figure that conveys the main idea behind the project or the main application being addressed. This figure is from <a href="https://arxiv.org/pdf/2210.07469">StyLEx</a>.</p>
+<p>A figure that conveys the schematic diagram behind the project or the main application being addressed. This figure is from <a href="https://arxiv.org/pdf/2210.07469">StyLEx</a>.</p>
 
-<p class="sys-img"><img src="./files/teaser.png" alt="imgname"></p>
+<p class="sys-img"><img src="./files/Schematic.png" alt="imgname"></p>
 
 
-<h3 id="the-timeline-and-the-highlights">Any subsection</h3>
+<!-- <h3 id="the-timeline-and-the-highlights">Any subsection</h3> -->
 
-<p>If you need to explain more about your figure</p>
+<!-- <p>If you need to explain more about your figure</p> -->
 
 <hr>
 
@@ -166,22 +163,20 @@ difficulty in memorizing them semantically.
 <b>What did you try to do? What problem did you try to solve? Articulate your objectives using absolutely no jargon.</b>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Basically trying to see if visual scenes may be represented linguistically when stored in human memory or are imagined back. We wanted to find out why some pictures are harder to remember than others. Specifically, we asked if pictures that are more abstract and difficult to describe in words are also harder to memorize. Our goal was to see if there's a link between how complex an image is and how challenging it is to remember it.
 </p>
 
 <p>
 <b>How is it done today, and what are the limits of current practice?</b>
 </p>
 <p>
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-<p>
+It involves generating captions for abstract images and no LLM model to our knowledge is tailored for it. Most psychological and neuroscience experiments use synthetic, non-natural images so obtaining any semantic information on them is impossible as the computational models don't focus on them. As such this involves careful prompt engineering to use existing LLMs to generate captions for non-natural images.<p>
 
 <p>
 <b>Who cares? If you are successful, what difference will it make?</b>
 </p>
 <p>
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Psychologists and neuroscientists, specifically computational neuroscientists and perception researchers as this can provide an novel way to understand the interplay between visual memory and our thoughts which are linguistic. It can also benefit VLM research in the computer science community,.</p>
 
 <hr>
 
@@ -192,7 +187,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 </p>
 
 <p>
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  We input the abstract images into GPT with various prompts (e.g., "Describe the image in detail"). For each image, we obtained captions like "A complex interplay of swirling colors and shapes forming an abstract pattern." We evaluated these captions using Likert scales and ROUGE-1 scores, selecting prompts that produced captions closest to human descriptions.
 </p>
 
 <p>
@@ -200,19 +195,15 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 </p>
 
 <p>
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-</p>
-
+  No modern LLM handles non-natural and synthetic data well for image captioning. As a result even careful prompt enginnering cannot generate very well defined captions, that captures what a human would look for. As a result we had to use human evaluations with reference annotations for it. Automatic evaluations like ROGUE scores compare similarities between a reference text and a generated text. However, since this is a visual task, a human generated Likert score would be able to understand how well the captions describe the visual image. As a result human intervation was necessary. The prompt enginenring took multiple tries.
 <hr>
     
 <h2 id="results">Results</h2>
 <p>
 <b>How did you measure success? What experiments were used? What were the results, both quantitative and qualitative? Did you succeed? Did you fail? Why?</b>
 </p>
-<p>
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-</p>
-<table>
+<p>Prompt 3 consistently performed better. Therefore, we're proceeding to use Prompt 3 to generate captions for the entire dataset.</p>
+<!-- <table>
   <thead>
     <tr>
       <th style="text-align: center"><strong>Experiment</strong></th>
@@ -236,10 +227,10 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
     </tr>
   </tbody>
   <caption>Table 1. This is Table 1's caption</caption>
-</table>
+</table> -->
 <br>
 <div style="text-align: center;">
-<img style="height: 300px;" alt="" src="./files/results.png">
+<img style="height: 400px;" alt="" src="./files/results1.png">
 </div>
 <br><br>
 
@@ -250,11 +241,14 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 <h2 id="conclusion">Conclustion and Future Work</h2>
 <p>
 
-  How easily are your results able to be reproduced by others?
-  Did your dataset or annotation affect other people's choice of research or development projects to undertake?
-  Does your work have potential harm or risk to our society? What kinds? If so, how can you address them?
-  What limitations does your model have? How can you extend your work for future research?</p>
+  So far, we have succefully able to prompt enginner for captioning 
+  synthetic images which means that we can use LLMs to get captions 
+  for larger datasets and use it as a human proxy, saving a lot of time required for manual annotation. 
 
+</p> <p>
+  Once we identified the best-performing prompts, we used GPT to generate captions for all the images in our dataset.We proceeded to analyze the complexity of these captions using readability scores likeFlesch’s Reading Ease and measures of syntactic complexity. Our aim was to determineif there's a positive correlation between the linguistic complexity of the captions and theestablished image complexity scores. We believed this approach would be successfulbecause it integrates human insights with advanced NLP techniques to produce andevaluate descriptions of abstract images. By quantifying caption complexity andcomparing it to memory performance, we hoped to uncover patterns that explain whycertain images are harder to remember. What's novel in our approach is the applicationof GPT and prompt engineering specifically tailored to artificially generated abstractimages, as well as the combination of human and machine-generated captions to refineour methods. This interdisciplinary strategy bridges gaps between visual perception,linguistic representation, and memory research.</p>
+</p>
+  
 
 <hr>
 
