@@ -193,9 +193,9 @@ Psychologists and neuroscientists, specifically computational neuroscientists an
 </div>
 
 <p>A UMAP (Uniform Manifold Approximation
-  and Projection) (McInnes et al., 2018) of the captions of select group of images was used to cluster
+  and Projection) of the captions of select group of images was used to cluster
   captions generated for abstract images by their caption complexity. The UMAP demonstrates clear
-  separation among captions based on their associated image complexities (See Figure 6). This separation indicates that the captions, reflect underlying patterns of image complexity that humans
+  separation among captions based on their associated image complexities. This separation indicates that the captions, reflect underlying patterns of image complexity that humans
   intuitively perceive</p>
 <br>
 <div style="text-align: center;">
@@ -204,7 +204,7 @@ Psychologists and neuroscientists, specifically computational neuroscientists an
 
 <p>We also compared the performance of models
   predicting memory performance using different
-  semantic complexity metrics (See Figure 7). A
+  semantic complexity metrics. A
   K-Fold cross-validation approach was employed
   to rigorously compare a semantic memorability
   model (based on a linear combination of perplexity
@@ -221,14 +221,36 @@ Psychologists and neuroscientists, specifically computational neuroscientists an
 
 <h2 id="conclusion">Conclustion and Future Work</h2>
 <p>
-
-  So far, we have succefully able to prompt enginner for captioning 
-  synthetic images which means that we can use LLMs to get captions 
-  for larger datasets and use it as a human proxy, saving a lot of time required for manual annotation. 
-
-</p> <p>
-  Once we identified the best-performing prompts, we used GPT to generate captions for all the images in our dataset.We proceeded to analyze the complexity of these captions using readability scores likeFlesch’s Reading Ease and measures of syntactic complexity. Our aim was to determineif there's a positive correlation between the linguistic complexity of the captions and theestablished image complexity scores. We believed this approach would be successfulbecause it integrates human insights with advanced NLP techniques to produce andevaluate descriptions of abstract images. By quantifying caption complexity andcomparing it to memory performance, we hoped to uncover patterns that explain whycertain images are harder to remember. What's novel in our approach is the applicationof GPT and prompt engineering specifically tailored to artificially generated abstractimages, as well as the combination of human and machine-generated captions to refineour methods. This interdisciplinary strategy bridges gaps between visual perception,linguistic representation, and memory research.</p>
-</p>
+  Overall, the results strongly support the idea that se-
+mantic descriptions aid visual memory. They reveal
+a robust connection between image complexity, se-
+mantic representation, and memory performance,
+shedding light on why natural scenes are easier to
+remember than abstract ones. The implications of
+this study extend to areas such as AI-driven image
+captioning, memory training, and understanding
+the cognitive basis of visual and semantic integra-
+tion.
+In this study, we quantitatively analyzed hu-
+man visual memory performance through semantic
+means by leveraging metrics such as perplexity and
+concreteness. These metrics serve as proxies for
+the difficulty of generating semantic descriptions,
+revealing that abstract images with higher visual
+complexity lack clear semantic cues, leading to in-
+creased memory recall errors. This supports the
+hypothesis that humans rely on both visual and
+semantic representations to encode and retrieve
+memories, with the absence of semantic anchors in
+abstract images impairing memory performance.
+Our UMAP analysis demonstrated that captions
+for less complex images cluster tightly, reflecting straightforward semantic structures, while captions
+for more complex images are dispersed, indicating
+greater variability and difficulty in interpretation.
+This suggests that semantic properties are closely
+tied to visual complexity, offering new insights
+into how image semantics influence cognitive pro-
+cesses.</p>
   
 
 <hr>
