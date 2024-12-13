@@ -169,7 +169,7 @@ Psychologists and neuroscientists, specifically computational neuroscientists an
 </p>
 
 <p>
-  We input the abstract images into GPT with various prompts (e.g., "Describe the image in detail"). We evaluated these captions using Likert scales and ROUGE-1 scores, selecting prompts that produced captions closest to human descriptions.
+The methodology involves generating captions for abstract images using a GPT-4 model with carefully engineered prompts, evaluated using both automatic and human metrics to select the best prompt. Semantic complexity was quantified using perplexity (from a pretrained BERT model) and concreteness (using WordNet synset depths). Regression models were trained with these semantic complexity features to predict human memory performance, validated through K-fold cross-validation with image blocks as folds.
 </p>
 
 <p>
@@ -177,7 +177,7 @@ Psychologists and neuroscientists, specifically computational neuroscientists an
 </p>
 
 <p>
-  No modern LLM handles non-natural and synthetic data well for image captioning. As a result even careful prompt enginnering cannot generate very well defined captions, that captures what a human would look for. As a result we had to use human evaluations with reference annotations for it. Automatic evaluations like ROGUE scores compare similarities between a reference text and a generated text. However, since this is a visual task, a human generated Likert score would be able to understand how well the captions describe the visual image. As a result human intervation was necessary. The prompt enginenring took multiple tries.
+  The main challenges included the limited ability of existing LLMs to accurately describe abstract images due to a lack of training on such stimuli, often defaulting to naturalistic interpretations. Extensive prompt engineering was required to guide the models effectively, which was labor-intensive. Additionally, readability metrics like Flesch scores were tested but found unsuitable, and the dataset was limited to 27 images and 6 participants, constraining the study’s scale and generalizability.
 <hr>
     
 <h2 id="results">Results</h2>
